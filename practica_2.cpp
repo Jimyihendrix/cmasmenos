@@ -27,7 +27,7 @@ if(lado>1){
 
 
 /* imprime parte superior del triangulo*/
-for(int i=1; i<=lado; i++){ /* inicia el bucle que contiene el triangulo superior del rombo */
+for(int i=1; i<=lado && lado<21; i++){ /* inicia el bucle que contiene el triangulo superior del rombo */
 
   for(int j=1; j<=(lado-i); j++){ /* Imprime los espacios de la mitad superior izquierda del rombo*/
     printf(" ");
@@ -62,7 +62,7 @@ for(int i=1; i<=lado; i++){ /* inicia el bucle que contiene el triangulo superio
   }
 
 /* Imprime el triangulo inferior del rombo */
-for(int i=1; i<=lado-1; i++){ /* Inicia el bucle que contiene la mitad inferior del rombo */
+for(int i=1; i<=lado-1 && lado<21; i++){ /* Inicia el bucle que contiene la mitad inferior del rombo */
 
     for(int j=1; j<=i; j++){  /* Imprime los espacios de la mitad inferior izquierda del rombo */
         printf(" ");
